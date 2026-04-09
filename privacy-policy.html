@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Progress Fitness Tracker</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #f7f5f0;
+    --surface: #ffffff;
+    --accent: #1a1a2e;
+    --accent-light: #e8e6ff;
+    --accent-mid: #4a3f8a;
+    --text: #1c1c1e;
+    --text-muted: #6b6b7b;
+    --text-light: #9898a8;
+    --border: rgba(0,0,0,0.08);
+    --border-strong: rgba(0,0,0,0.15);
+    --green: #0f6e56;
+    --green-bg: #e1f5ee;
+    --red: #993c1d;
+    --red-bg: #faece7;
+    --blue: #185fa5;
+    --blue-bg: #e6f1fb;
+    --tag-bg: #f0eeff;
+    --tag-text: #3c3489;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+
+  .wrapper {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+  }
+
+  header {
+    padding: 56px 0 40px;
+    border-bottom: 1px solid var(--border-strong);
+    margin-bottom: 48px;
+  }
+
+  .app-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent-mid);
+    background: var(--tag-bg);
+    border: 1px solid rgba(74,63,138,0.18);
+    padding: 5px 12px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+  }
+
+  .app-label::before {
+    content: '';
+    display: inline-block;
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--accent-mid);
+  }
+
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.15;
+    color: var(--accent);
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+
+  .meta {
+    font-size: 13px;
+    color: var(--text-light);
+    margin-top: 16px;
+  }
+
+  .meta strong {
+    color: var(--text-muted);
+    font-weight: 500;
+  }
+
+  .toc-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-bottom: 48px;
+  }
+
+  .toc-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin-bottom: 16px;
+  }
+
+  .toc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 24px;
+  }
+
+  .toc-grid a {
+    font-size: 13.5px;
+    color: var(--accent-mid);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 0;
+    transition: color 0.15s;
+  }
+
+  .toc-grid a:hover { color: var(--accent); }
+
+  .toc-num {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--text-light);
+    min-width: 20px;
+  }
+
+  section {
+    margin-bottom: 52px;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .section-num {
+    font-family: 'DM Serif Display', serif;
+    font-size: 13px;
+    color: var(--text-light);
+    padding-top: 6px;
+    min-width: 28px;
+  }
+
+  h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: var(--accent);
+    line-height: 1.25;
+  }
+
+  h3 {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin: 28px 0 10px;
+  }
+
+  p {
+    color: var(--text);
+    margin-bottom: 14px;
+  }
+
+  p:last-child { margin-bottom: 0; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px 26px;
+    margin-bottom: 12px;
+  }
+
+  .card p { font-size: 14px; }
+
+  ul {
+    list-style: none;
+    margin: 10px 0 16px;
+  }
+
+  ul li {
+    font-size: 14px;
+    color: var(--text);
+    padding: 5px 0 5px 20px;
+    position: relative;
+    line-height: 1.6;
+    border-bottom: 1px solid var(--border);
+  }
+
+  ul li:last-child { border-bottom: none; }
+
+  ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    background: var(--accent-mid);
+    opacity: 0.5;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 100px;
+    vertical-align: middle;
+    margin-right: 4px;
+  }
+
+  .badge-green { background: var(--green-bg); color: var(--green); }
+  .badge-red { background: var(--red-bg); color: var(--red); }
+  .badge-blue { background: var(--blue-bg); color: var(--blue); }
+  .badge-purple { background: var(--tag-bg); color: var(--tag-text); }
+
+  .callout {
+    border-left: 3px solid var(--accent-mid);
+    background: var(--tag-bg);
+    border-radius: 0 10px 10px 0;
+    padding: 14px 18px;
+    margin: 20px 0;
+    font-size: 14px;
+    color: var(--tag-text);
+    line-height: 1.6;
+  }
+
+  .callout-warning {
+    border-left-color: var(--red);
+    background: var(--red-bg);
+    color: var(--red);
+  }
+
+  .callout-green {
+    border-left-color: var(--green);
+    background: var(--green-bg);
+    color: var(--green);
+  }
+
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .nolist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin: 14px 0;
+  }
+
+  .nolist-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 13.5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .dot-green { width: 6px; height: 6px; border-radius: 50%; background: var(--green); flex-shrink: 0; }
+  .dot-red { width: 6px; height: 6px; border-radius: 50%; background: var(--red); flex-shrink: 0; }
+
+  .service-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-bottom: 12px;
+  }
+
+  .service-name {
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 6px;
+    color: var(--accent);
+  }
+
+  .service-card p { font-size: 14px; color: var(--text-muted); margin: 0; }
+  .service-card a { color: var(--accent-mid); text-decoration: none; }
+  .service-card a:hover { text-decoration: underline; }
+
+  .rights-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 14px 0;
+  }
+
+  .right-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+  }
+
+  .right-title {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+
+  .right-desc {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.55;
+  }
+
+  .footer {
+    border-top: 1px solid var(--border-strong);
+    padding-top: 36px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .footer-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+
+  .footer-email a {
+    font-size: 14px;
+    color: var(--accent-mid);
+    text-decoration: none;
+  }
+
+  .footer-email a:hover { text-decoration: underline; }
+
+  .footer-note {
+    font-size: 12px;
+    color: var(--text-light);
+    text-align: right;
+  }
+
+  .divider {
+    height: 1px;
+    background: var(--border);
+    margin: 32px 0;
+  }
+
+  .sources-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+    margin: 16px 0;
+  }
+
+  .sources-table th {
+    text-align: left;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    padding: 0 12px 10px 0;
+    border-bottom: 1px solid var(--border-strong);
+  }
+
+  .sources-table td {
+    padding: 10px 12px 10px 0;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+
+  .sources-table tr:last-child td { border-bottom: none; }
+
+  .tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 8px 0 16px;
+  }
+
+  .tag {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 100px;
+    background: var(--tag-bg);
+    color: var(--tag-text);
+    border: 1px solid rgba(74,63,138,0.15);
+  }
+
+  @media (max-width: 560px) {
+    .toc-grid, .two-col, .nolist, .rights-grid { grid-template-columns: 1fr; }
+    header { padding: 36px 0 28px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <header>
+    <div class="app-label">Progress Fitness Tracker</div>
+    <h1>Privacy Policy</h1>
+    <p class="meta"><strong>Last updated:</strong> April 9, 2026 &nbsp;·&nbsp; Developed by Pim Croon &nbsp;·&nbsp; Subject to GDPR / AVG</p>
+  </header>
+
+  <div class="toc-card">
+    <p class="toc-label">Contents</p>
+    <div class="toc-grid">
+      <a href="#s1"><span class="toc-num">01</span> Who we are</a>
+      <a href="#s2"><span class="toc-num">02</span> What data we collect</a>
+      <a href="#s3"><span class="toc-num">03</span> How we store your data</a>
+      <a href="#s4"><span class="toc-num">04</span> AI Coach</a>
+      <a href="#s5"><span class="toc-num">05</span> Recommendations & calculations</a>
+      <a href="#s6"><span class="toc-num">06</span> Legal basis (GDPR)</a>
+      <a href="#s7"><span class="toc-num">07</span> What we do not do</a>
+      <a href="#s8"><span class="toc-num">08</span> Third-party services</a>
+      <a href="#s9"><span class="toc-num">09</span> Your rights</a>
+      <a href="#s10"><span class="toc-num">10</span> Children</a>
+      <a href="#s11"><span class="toc-num">11</span> Changes to this policy</a>
+    </div>
+  </div>
+
+  <!-- 1. Who we are -->
+  <section id="s1">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2>Who we are</h2>
+    </div>
+    <p>Progress is a personal fitness tracking app developed by <strong>Pim Croon</strong>. For any questions about this policy, please reach out at <a href="mailto:pimcroondb@gmail.com" style="color:var(--accent-mid)">pimcroondb@gmail.com</a>.</p>
+  </section>
+
+  <!-- 2. What data we collect -->
+  <section id="s2">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2>What data we collect</h2>
+    </div>
+
+    <h3>Account & profile data</h3>
+    <ul>
+      <li>Email address and display name used to create your account</li>
+      <li>Optional profile picture — stored locally on your device only, never uploaded to our servers</li>
+    </ul>
+
+    <h3>Body & fitness data</h3>
+    <ul>
+      <li><strong>Body metrics:</strong> weight entries, body fat percentage, and measurements (neck, shoulders, chest, arms, waist, hips, thighs, calves)</li>
+      <li><strong>Workout logs:</strong> exercises, sets, reps, weight, set type, duration, distance, RPE rating, superset groupings</li>
+      <li><strong>Cardio activities:</strong> type, duration, distance, calories, heart rate data</li>
+      <li><strong>Workout templates:</strong> template names and exercises, including AI-generated templates you choose to save</li>
+      <li><strong>Notes:</strong> free-text notes attached to workouts or exercises. Avoid including sensitive personal information in notes.</li>
+      <li><strong>Nutrition:</strong> food name, meal type, and macronutrients (calories, protein, carbohydrates, fat)</li>
+    </ul>
+
+    <h3>Body profile & goals</h3>
+    <ul>
+      <li>Age, biological sex, and height — used to calculate TDEE via the Mifflin-St Jeor formula</li>
+      <li>Activity level — used as a multiplier in calorie calculations</li>
+      <li>Goal weight, goal type (cut / bulk / maintain), weekly rate target, and starting reference weight</li>
+      <li>Maximum heart rate or age-based heart rate — used to calculate personal heart rate training zones</li>
+      <li>Weekly workout goal</li>
+    </ul>
+
+    <div class="callout">
+      Biological sex and age are health-related data points. Under GDPR, these are processed with extra care and are collected solely to calculate personalised fitness and nutrition estimates. They are never used for profiling or shared with third parties.
+    </div>
+
+    <h3>AI Coach memory</h3>
+    <div class="card">
+      <p>When you ask the AI Coach to remember facts about your preferences, training style, or goals, these are stored as text key-value pairs in our database (one row per fact, linked to your account). Examples: <em>"preferred split: PPL"</em>, <em>"training 4 days per week"</em>. This data is sent to Anthropic on every AI Coach request to personalise responses.</p>
+      <p style="margin-top:10px">Your profile settings (weekly goal, weight goal type, enabled modules, age, height, activity level) are automatically synced to the AI Coach memory. No sensitive health data (HealthKit readings, weight entries, nutrition logs) is written to coach memory automatically.</p>
+      <p style="margin-top:10px">You can delete individual memories by asking the coach to forget them, or delete all memories by deleting your account.</p>
+    </div>
+
+    <h3>Offline data</h3>
+    <p>If you save a workout while offline, it is temporarily stored on your device and automatically uploaded when your internet connection is restored. No additional data is collected during offline use.</p>
+
+    <h3>App preferences</h3>
+    <div class="callout callout-green">
+      Notification preferences, cardio type visibility, per-activity overrides, and dashboard layout settings are stored <strong>locally on your device only</strong> and are never uploaded to our servers.
+    </div>
+
+    <h3>Apple HealthKit data</h3>
+    <div class="two-col">
+      <div>
+        <span class="badge badge-blue">Read</span>
+        <ul style="margin-top:10px">
+          <li>Body weight and body fat percentage</li>
+          <li>Heart rate, resting heart rate, and HRV</li>
+          <li>Blood oxygen saturation (SpO2)</li>
+          <li>Respiratory rate</li>
+          <li>Sleep analysis (total, deep, REM, core, awake)</li>
+          <li>Step count</li>
+          <li>Active energy burned</li>
+          <li>Workouts and cardio activities</li>
+        </ul>
+      </div>
+      <div>
+        <span class="badge badge-green">Write</span>
+        <ul style="margin-top:10px">
+          <li>Body weight — optionally saved back to Apple Health when you log a weight entry</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout">
+      HealthKit data is used solely to display your health trends within the app and, if you choose, to provide context to the AI Coach. It is never shared with third parties for advertising, data mining, or any unrelated purpose. This complies with Apple's HealthKit guidelines.
+    </div>
+
+    <h3>App feedback</h3>
+    <p>Messages you submit via the in-app feedback form.</p>
+  </section>
+
+  <!-- 3. How we store your data -->
+  <section id="s3">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2>How we store your data</h2>
+    </div>
+    <p>Your account and fitness data — including workout logs, templates, notes, nutrition entries, body metrics, AI Coach memories, and profile data — is stored securely on <strong>Supabase</strong> (<a href="https://supabase.com" style="color:var(--accent-mid)">supabase.com</a>), on servers located in the <strong>European Union (EU West — Ireland)</strong>. Data is protected with row-level security, meaning you can only access your own data.</p>
+
+    <div class="tag-row">
+      <span class="tag">EU-hosted</span>
+      <span class="tag">Row-level security</span>
+      <span class="tag">Supabase</span>
+    </div>
+
+    <p>Your profile picture, AI Coach conversation history, notification preferences, dashboard layout, and cardio type settings are stored locally on your device only.</p>
+
+    <p>The app caches your most recent data locally to improve loading speed. This cache is automatically refreshed and is cleared when you sign out.</p>
+
+    <div class="callout callout-warning">
+      When you delete your account, all your data — including AI Coach memories, workout links, and all fitness data — is permanently and immediately deleted from our servers via cascading deletion.
+    </div>
+  </section>
+
+  <!-- 4. AI Coach -->
+  <section id="s4">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2>AI Coach</h2>
+    </div>
+    <p>Progress includes an optional AI Coach feature powered by <strong>Claude</strong>, a large language model developed by Anthropic (<a href="https://anthropic.com" style="color:var(--accent-mid)">anthropic.com</a>).</p>
+
+    <h3>What is sent when you use the AI Coach</h3>
+    <ul>
+      <li>Your message text (capped at 1,500 characters per message)</li>
+      <li>Your conversation history (up to the last 20 messages)</li>
+      <li>Your AI Coach memories (key-value facts plus auto-synced profile settings)</li>
+      <li>Anonymised health context — limited only to data sources you have enabled in the AI Coach screen</li>
+    </ul>
+
+    <h3>Optional health context</h3>
+    <div class="nolist">
+      <div class="nolist-item"><span class="dot-green"></span> Current weight and goal weight</div>
+      <div class="nolist-item"><span class="dot-green"></span> Recovery score, sleep, HRV, resting heart rate, steps</div>
+      <div class="nolist-item"><span class="dot-green"></span> This week's cardio summaries (type, duration, distance)</div>
+      <div class="nolist-item"><span class="dot-green"></span> Your weekly workout goal</div>
+    </div>
+
+    <h3>On-demand data access (tool use)</h3>
+    <p>The AI Coach may access additional data on your behalf when relevant to your question. It can:</p>
+    <ul>
+      <li>Look up your exercise history for a specific lift</li>
+      <li>Check your personal records for a specific exercise</li>
+      <li>List or retrieve your saved workout templates</li>
+      <li>Calculate an estimated one-rep max from a set you describe</li>
+    </ul>
+    <p>This data is fetched by our server and included in the AI request. It is not stored by Anthropic beyond what is needed to generate a response.</p>
+
+    <h3>What is NOT sent</h3>
+    <div class="nolist">
+      <div class="nolist-item"><span class="dot-red"></span> Your full workout history</div>
+      <div class="nolist-item"><span class="dot-red"></span> Body measurements</div>
+      <div class="nolist-item"><span class="dot-red"></span> Your profile picture</div>
+      <div class="nolist-item"><span class="dot-red"></span> Data from sources you haven't enabled</div>
+    </div>
+
+    <h3>AI-generated templates & proposed actions</h3>
+    <p>AI-generated workout templates appear as preview cards in chat. Saving to your account requires explicit confirmation. Similarly, AI-proposed actions (logging weight, setting a goal, adjusting targets) are shown as tappable cards — no action is taken until you confirm.</p>
+
+    <h3>Storage & retention</h3>
+    <div class="callout callout-green">
+      AI Coach conversations are stored only on your device. They are not stored on our servers and are not retained by Anthropic beyond what is needed to generate a response. Conversations are cleared when you sign out or use the Clear Conversation option.
+    </div>
+
+    <h3>Usage limits</h3>
+    <ul>
+      <li>10 messages per day</li>
+      <li>Individual messages capped at 1,500 characters</li>
+      <li>Conversation history limited to the 20 most recent messages</li>
+    </ul>
+
+    <h3>Health & safety disclaimer</h3>
+    <div class="callout callout-warning">
+      The AI Coach provides general fitness and nutrition information for educational purposes only. It does not diagnose injuries or medical conditions. If you mention an injury, the coach will suggest alternatives and always direct you to a qualified healthcare professional. The AI Coach is not a substitute for professional medical advice.
+    </div>
+
+    <h3>Anthropic's role</h3>
+    <p>Anthropic processes data transmitted through their API in accordance with their own privacy policy at <a href="https://anthropic.com/privacy" style="color:var(--accent-mid)">anthropic.com/privacy</a>. By using the AI Coach feature, you explicitly consent to this processing. You can disable the AI Coach at any time in Settings.</p>
+  </section>
+
+  <!-- 5. Recommendations -->
+  <section id="s5">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2>Recommendations & calculations</h2>
+    </div>
+    <p>Progress uses peer-reviewed scientific research to power its calculations. All formulas and thresholds are documented in-app under <strong>Settings → Science & Sources</strong>.</p>
+
+    <table class="sources-table">
+      <thead>
+        <tr>
+          <th>Calculation</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Calorie needs (TDEE)</td><td>Mifflin-St Jeor equation (Mifflin et al., 1990)</td></tr>
+        <tr><td>Protein targets</td><td>ISSN position stand (Jäger et al., 2017)</td></tr>
+        <tr><td>Heart rate zones</td><td>ACSM Guidelines, 11th Edition (2021)</td></tr>
+        <tr><td>Recovery score</td><td>Plews et al. (2013); Buchheit (2014); Hirshkowitz et al. (2015)</td></tr>
+        <tr><td>Training volume</td><td>Schoenfeld et al. (2017)</td></tr>
+        <tr><td>1RM estimation</td><td>Epley formula (1985)</td></tr>
+        <tr><td>BMI classification</td><td>World Health Organization</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px; color:var(--text-light)">All recommendations are informational and adjust based on your personal goals. They are not medical advice.</p>
+  </section>
+
+  <!-- 6. Legal basis -->
+  <section id="s6">
+    <div class="section-header">
+      <span class="section-num">06</span>
+      <h2>Legal basis for processing (GDPR)</h2>
+    </div>
+    <p>As a Dutch developer, this app is subject to the General Data Protection Regulation (GDPR / AVG). We process your personal data on the following legal grounds:</p>
+    <div class="card">
+      <p><strong>Consent</strong> — you explicitly consent to data collection when creating an account, granting HealthKit access, connecting Strava, and enabling the AI Coach feature.</p>
+    </div>
+    <div class="card">
+      <p><strong>Contract performance</strong> — processing is necessary to provide the app's core functionality.</p>
+    </div>
+    <div class="card">
+      <p><strong>Legitimate interest</strong> — processing of age, biological sex, and height to calculate personalised fitness estimates, where this processing is proportionate and expected by users of a fitness app.</p>
+    </div>
+    <p>You may withdraw your consent at any time by disabling integrations in Settings or by deleting your account.</p>
+  </section>
+
+  <!-- 7. What we do not do -->
+  <section id="s7">
+    <div class="section-header">
+      <span class="section-num">07</span>
+      <h2>What we do not do</h2>
+    </div>
+    <ul>
+      <li>We do not sell your data to anyone</li>
+      <li>We do not share your data with advertisers</li>
+      <li>We do not use your data for data mining or third-party analytics</li>
+      <li>We do not use your data for any purpose other than running the app for you</li>
+      <li>We do not collect data in the background when the app is closed</li>
+      <li>We do not use HealthKit data for advertising, data mining, or third-party analytics</li>
+      <li>We do not store AI Coach conversations on our servers (memories are stored; conversations are not)</li>
+      <li>We do not use workout notes or free-text fields for any purpose other than displaying them back to you</li>
+      <li>We do not use AI Coach memories for any purpose other than personalising AI Coach responses for you</li>
+      <li>We do not allow the AI Coach to diagnose injuries or medical conditions</li>
+    </ul>
+  </section>
+
+  <!-- 8. Third-party services -->
+  <section id="s8">
+    <div class="section-header">
+      <span class="section-num">08</span>
+      <h2>Third-party services</h2>
+    </div>
+
+    <div class="service-card">
+      <p class="service-name">Strava</p>
+      <p>If you connect your Strava account, we fetch your activity data from Strava's API. This requires explicit authorisation. Strava activity IDs may be stored alongside linked gym workouts. You can disconnect at any time in Settings.</p>
+    </div>
+
+    <div class="service-card">
+      <p class="service-name">Open Food Facts</p>
+      <p>When you scan a barcode in the Nutrition module, a request is sent to the Open Food Facts public API to look up food data. No personal data is sent in this request.</p>
+    </div>
+
+    <div class="service-card">
+      <p class="service-name">Anthropic (Claude AI)</p>
+      <p>If you use the AI Coach feature, your messages, AI Coach memories, and selected health context are processed by Anthropic's Claude API. Privacy policy: <a href="https://anthropic.com/privacy">anthropic.com/privacy</a></p>
+    </div>
+
+    <div class="service-card">
+      <p class="service-name">Firebase Crashlytics & Analytics (Google)</p>
+      <p>We use Firebase Crashlytics for crash reports and Firebase Analytics for anonymised usage events (e.g. "workout logged"). Data collected includes device model, iOS version, app version, a random installation UUID, crash stack traces, and anonymised event counts. No personal data is included in events and this data is never linked to your identity or shared for advertising. See <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</p>
+    </div>
+  </section>
+
+  <!-- 9. Your rights -->
+  <section id="s9">
+    <div class="section-header">
+      <span class="section-num">09</span>
+      <h2>Your rights</h2>
+    </div>
+    <p>Under the GDPR / AVG, you have the following rights:</p>
+    <div class="rights-grid">
+      <div class="right-item">
+        <p class="right-title">Right to access</p>
+        <p class="right-desc">Request a copy of all data we hold about you by emailing <a href="mailto:pimcroondb@gmail.com" style="color:var(--accent-mid)">pimcroondb@gmail.com</a></p>
+      </div>
+      <div class="right-item">
+        <p class="right-title">Right to deletion</p>
+        <p class="right-desc">Delete your account from the Profile screen — this permanently deletes all your data</p>
+      </div>
+      <div class="right-item">
+        <p class="right-title">Right to portability</p>
+        <p class="right-desc">Request your data in a portable format by emailing <a href="mailto:pimcroondb@gmail.com" style="color:var(--accent-mid)">pimcroondb@gmail.com</a></p>
+      </div>
+      <div class="right-item">
+        <p class="right-title">Right to rectification</p>
+        <p class="right-desc">Request correction of inaccurate personal data by emailing <a href="mailto:pimcroondb@gmail.com" style="color:var(--accent-mid)">pimcroondb@gmail.com</a></p>
+      </div>
+      <div class="right-item">
+        <p class="right-title">Right to object</p>
+        <p class="right-desc">Disconnect Strava, revoke HealthKit access, or disable the AI Coach at any time in Settings</p>
+      </div>
+      <div class="right-item">
+        <p class="right-title">Right to complain</p>
+        <p class="right-desc">File a complaint with the Dutch DPA at <a href="https://autoriteitpersoonsgegevens.nl" style="color:var(--accent-mid)">autoriteitpersoonsgegevens.nl</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Children -->
+  <section id="s10">
+    <div class="section-header">
+      <span class="section-num">10</span>
+      <h2>Children</h2>
+    </div>
+    <p>This app is not directed at children under 13 and we do not knowingly collect data from children under 13. If you believe a child has provided personal data, please contact us at <a href="mailto:pimcroondb@gmail.com" style="color:var(--accent-mid)">pimcroondb@gmail.com</a> and we will delete it promptly.</p>
+  </section>
+
+  <!-- 11. Changes -->
+  <section id="s11">
+    <div class="section-header">
+      <span class="section-num">11</span>
+      <h2>Changes to this policy</h2>
+    </div>
+    <p>If we make significant changes to this privacy policy, we will update the date at the top of this document and notify users via the app where required. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+  </section>
+
+  <div class="footer">
+    <div>
+      <p class="footer-name">Pim Croon</p>
+      <p class="footer-email"><a href="mailto:pimcroondb@gmail.com">pimcroondb@gmail.com</a></p>
+    </div>
+    <div class="footer-note">
+      <p>Progress Fitness Tracker</p>
+      <p>Last updated: April 9, 2026</p>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
